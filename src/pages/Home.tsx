@@ -8,6 +8,7 @@ const Skills = lazy(() => import('@/components/sections/Skills').then((m) => ({ 
 const Projects = lazy(() => import('@/components/sections/Projects').then((m) => ({ default: m.Projects })));
 const Education = lazy(() => import('@/components/sections/Education').then((m) => ({ default: m.Education })));
 const GithubStats = lazy(() => import('@/components/sections/GithubStats').then((m) => ({ default: m.GithubStats })));
+const LeetcodeStats = lazy(() => import('@/components/sections/LeetcodeStats').then((m) => ({ default: m.LeetcodeStats })));
 const Contact = lazy(() => import('@/components/sections/Contact').then((m) => ({ default: m.Contact })));
 
 function SectionFallback() {
@@ -21,6 +22,7 @@ export function Home() {
       <Suspense fallback={<SectionFallback />}>
         <About />
         <Skills />
+        <LeetcodeStats />
         <Projects />
         <Education />
         <GithubStats />

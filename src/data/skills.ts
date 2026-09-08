@@ -33,6 +33,7 @@ export const skills: Skill[] = [
   { name: 'VS Code', category: 'Tools', level: 95 },
   { name: 'Postman', category: 'Tools', level: 82 },
   { name: 'Figma', category: 'Tools', level: 70 },
+  { name: 'Wordpress', category: 'Tools', level: 60 },
 ];
 
 export const skillCategories = [
